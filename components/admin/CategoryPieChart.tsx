@@ -19,7 +19,7 @@ export default function CategoryPieChart() {
                     </Pie>
                     <Tooltip
                         contentStyle={{ background: "#1e2130", border: "1px solid #2a2f45", borderRadius: 10, fontSize: 12 }}
-                        formatter={(v: number) => [`${v}%`, ""]}
+                        formatter={(v: number | undefined) => [`${v ?? 0}%`, ""]}
                     />
                 </PieChart>
             </ResponsiveContainer>
