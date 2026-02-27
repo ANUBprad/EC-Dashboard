@@ -42,7 +42,7 @@ export default function RevenueChart() {
                         contentStyle={{ background: "#1e2130", border: "1px solid #2a2f45", borderRadius: 10, fontSize: 12 }}
                         labelStyle={{ color: "#94a3b8", marginBottom: 4 }}
                         itemStyle={{ color: "#f1f5f9" }}
-                        formatter={(v: number) => [`$${v.toLocaleString()}`, ""]}
+                        formatter={(v) => [`$${(v ?? 0).toLocaleString()}`, ""]}
                     />
                     <Area type="monotone" dataKey="prevYear" stroke="#3a4060" strokeWidth={2} fill="url(#colorPrev)" name="Last Year" dot={false} />
                     <Area type="monotone" dataKey="revenue" stroke="#4f7cff" strokeWidth={2.5} fill="url(#colorRevenue)" name="This Year" dot={false} />

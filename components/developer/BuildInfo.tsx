@@ -37,12 +37,11 @@ export default function BuildInfo() {
                                 <span className="badge badge-green">{row.value}</span>
                             ) : (
                                 <span style={{
-                                    fontSize: 13, fontWeight: 600, color: "var(--text-primary)",
                                     fontFamily: row.label === "Commit" ? "monospace" : "inherit",
-                                    background: row.label === "Environment" ? "rgba(79,124,255,0.1)" : "transparent",
-                                    color: row.label === "Environment" ? "#4f7cff" : "var(--text-primary)",
-                                    padding: row.label === "Environment" ? "2px 8px" : 0,
-                                    borderRadius: row.label === "Environment" ? 6 : 0,
+      background: row.label === "Environment" ? "rgba(79,124,255,0.1)" : "transparent",
+      color: row.label === "Environment" ? "#4f7cff" : "var(--text-primary)",
+      padding: row.label === "Environment" ? "2px 8px" : 0,
+      borderRadius: row.label === "Environment" ? 6 : 0,
                                 }}>{row.value}</span>
                             )}
                         </div>
