@@ -7,6 +7,6 @@ Built for scalability, analytics clarity, and clean UI architecture.
 ## 🚀 Live Development
 
 Local URL:
-'''
+```
 ecdashboar.netlify.app
-'''
+```
